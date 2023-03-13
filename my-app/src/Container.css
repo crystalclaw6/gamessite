@@ -1,0 +1,31 @@
+.scrollableContainer {
+    display: flex;
+	height: 100%;
+    position: relative;
+}
+.listBox {
+    width: 1100px;
+    height: 600px;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.5);
+    margin: 0 auto;
+}
+.list {
+	 overflow-y: auto;
+      list-style: none;
+	
+}
+
+.list li + li { margin-top: 10px; }
+
+.item {
+  display: flex;
+  width: 65rem;
+  height: 20rem;
+  background-color: aquamarine;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+}

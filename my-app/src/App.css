@@ -1,0 +1,49 @@
+.App {}
+
+
+
+
+.routed {
+    top: 5vh;
+    position: relative;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+
+.headLink {
+    
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.linkStyle {
+    text-decoration: none;
+    font-family: small-caps;
+    font-size: 50px;
+    margin: 4rem;
+
+}
+
+.linkStyle.small {
+    
+    font-size: 25px;
+}

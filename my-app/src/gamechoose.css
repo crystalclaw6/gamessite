@@ -1,0 +1,39 @@
+.gameBox{
+
+    display: flex;
+  justify-content: center;
+}
+.description{
+  float: right;
+    width: 65%;
+    font-size: 18px;
+    margin-right: 10%;
+
+}
+.listOfGames div{
+    color: black;
+}
+.title{
+ float: right;
+    font-size: 20px;
+
+}
+.listOfGames{
+    padding: 0;
+    margin: auto;
+    width: 60%;
+    list-style-type: none;
+}
+.listItem{
+     background-color: rgba(230, 230, 250, 0.5);
+    padding: 30px;
+    margin-bottom: 20px;
+    display: table;
+    width: 90%;
+    height: inherit;
+}
+.gamelinkStyle{
+    text-decoration: none;
+    font-family: small-caps;
+    font-size: 40px;
+}
