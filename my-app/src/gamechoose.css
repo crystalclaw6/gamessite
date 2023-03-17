@@ -5,18 +5,17 @@
 }
 .description{
   float: right;
-    width: 65%;
-    font-size: 18px;
-    margin-right: 10%;
-
+    width: 75%;
+    font-size: 1.2vw;
+    margin-right: 1%;
 }
 .listOfGames div{
     color: black;
 }
 .title{
- float: right;
-    font-size: 20px;
-
+    position: relative;
+    left: 10%;
+    margin-bottom: 1%;
 }
 .listOfGames{
     padding: 0;
@@ -35,5 +34,5 @@
 .gamelinkStyle{
     text-decoration: none;
     font-family: small-caps;
-    font-size: 40px;
+    font-size: 2vw;
 }

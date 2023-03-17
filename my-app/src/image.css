@@ -1,5 +1,12 @@
 .image{
         
     float:left;
-    
+
+    font-size: calc(2px + 1vw);
+    width: 10vw;
+    height: 10vw;
+}
+.image img{
+        width: 100%;
+    height: auto;
 }

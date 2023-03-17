@@ -1,9 +1,10 @@
 
 import './App.css';
 import React from 'react';
-import HomePage from './Home.js'
-import ChoosePage from './Project.js'
-import { Routes, Route, Link } from 'react-router-dom';
+import HomePage from './Home.js';
+import ChoosePage from './Project.js';
+import TodoApp from './SeaBattlePage.js';
+import { Routes, Route, Link} from 'react-router-dom';
 
 function App(){ return(
     <div className="App">
@@ -13,12 +14,12 @@ function App(){ return(
     <Link to="/about" className = "linkStyle small">КАТАЛОГ</Link>  
     </div>
     <div className = "routed">
-        <Routes>
+    <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<ChoosePage />} />
+     <Route path="/seabattle" element={<TodoApp />} />
       </Routes>
     </div>
-  
 </div>
 );}
 export default App;
