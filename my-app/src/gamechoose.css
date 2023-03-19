@@ -1,6 +1,6 @@
 .gameBox{
 
-    display: flex;
+    display:block;
   justify-content: center;
 }
 .description{
@@ -10,7 +10,7 @@
     margin-right: 1%;
 }
 .listOfGames div{
-    color: black;
+    color: rgb(11, 32, 48);
 }
 .title{
     position: relative;
@@ -24,7 +24,7 @@
     list-style-type: none;
 }
 .listItem{
-     background-color: rgba(230, 230, 250, 0.5);
+     background-color: #b6caffc3;
     padding: 30px;
     margin-bottom: 20px;
     display: table;

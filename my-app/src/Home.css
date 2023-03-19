@@ -19,18 +19,22 @@ margin: 0 auto;
   position: relative;
   display: flex;
   overflow: hidden;
+  color: #b6caffc3;
 }
-article{
+article{ 
     position: absolute;
     opacity: 0;
     width: 100%;
     height: 100%;
+    size: 100px;
     transition: var(--transition);
+    color: #b6caffc3;
 }
 .HomePage{
       width: 90vw;
   margin: 5rem auto;
   max-width: var(--max-width);
+  color: #b6caffc3;
 }
 .gameTtitle{
      text-transform: capitalize;

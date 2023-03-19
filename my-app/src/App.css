@@ -1,15 +1,16 @@
-.App {}
-
 
 
 
 .routed {
+    border: 1px;
 
     position: relative;
+    color: blue;
 }
 
 .App-header {
-    background-color: #282c34;
+
+    background-color: #80a7f6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,24 +27,26 @@
 
 
 .headLink {
-    
     display: inline-block;
     position: relative;
     left: 15%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
 
 }
 
 .linkStyle {
-    text-decoration: none;
+    text-decoration:underline;
     font-family: small-caps;
     font-size: 50px;
-    margin: 4rem;
+    margin: 5rem;
+    color: #bef1ff;
 
 }
 
 .linkStyle.small {
     
-    font-size: 25px;
+    font-size: 30px;
+    margin: 25rem;
 }
+

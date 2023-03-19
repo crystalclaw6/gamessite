@@ -21,7 +21,7 @@ class HomePage extends React.Component {
         return (
             <div className = "HomePage">
             <Helmet>
-            <title > Добро пожаловать в Valley! < /title>
+            <title>Добро пожаловать в игровой клиент Valley Store</title>
             </Helmet>
             <section className = "section">
             <div>
