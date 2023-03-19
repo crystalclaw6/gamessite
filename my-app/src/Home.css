@@ -17,6 +17,7 @@ article.lastSlide{
   position: relative;
   display: flex;
   overflow: hidden;
+  color: #b6caffc3;
 }
 article.activeSlide:after {
   content: '';
@@ -32,12 +33,15 @@ article{
     opacity: 0;
     width: 100%;
     height: 100%;
+    size: 100px;
     transition: var(--transition);
+    color: #b6caffc3;
 }
 .HomePage{
       width: 90vw;
   margin: 5rem auto;
   max-width: var(--max-width);
+  color: #b6caffc3;
 }
 
 .gameTitle{

@@ -15,7 +15,7 @@ class ChoosePage extends React.Component {
             <ul className = "listOfGames">
             
             {JsonGames.map(game =>           
-            <Link to = {game.path} className = "gamelinkStyle">
+            <Link to= {game.path} className = "gamelinkStyle">
             <li className = "listItem">
             
             <Image path = {game.pathToLogo} expl = {game.explanation}/>
@@ -24,6 +24,9 @@ class ChoosePage extends React.Component {
             </li>
             </Link>
             )}
+
+
+            
 
             </ul>
             </div>
