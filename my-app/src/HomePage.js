@@ -13,9 +13,22 @@ class HomePage extends React.Component {
     };
   }
     setCurrentIndex(increment){
-        this.setState((prevState, props) => ({
-    currentIndex: prevState.currentIndex + increment
+        this.setState((prevState) => ({
+    currentIndex: prevState.currentIndex + increment,
 }));
+    }
+    componentDidUpdate(){
+        let lastIndex = this.state.games.length - 1;
+        if (this.state.currentIndex < 0) {
+            this.setState((prevState) => ({
+    currentIndex: lastIndex,
+}));
+        }
+        if (this.state.currentIndex > lastIndex) {
+            this.setState((prevState) => ({
+    currentIndex: 0,
+}));
+        }
     }
     render() {
         return (
@@ -24,10 +37,8 @@ class HomePage extends React.Component {
             <title>Добро пожаловать в игровой клиент Valley Store</title>
             </Helmet>
             <section className = "section">
-            <div>
             {JsonGames.map((game, gameIndex) =>{
             let position = 'nextSlide';
-            console.log(this.state.currentIndex, gameIndex);
             if (gameIndex === this.state.currentIndex){
                 position = 'activeSlide';
             }
@@ -36,17 +47,18 @@ class HomePage extends React.Component {
             }
             return(
                 <article className = {position}>
-                <img src = {game.pathToLogo} className = "backImg" />
                 <div className = "gameTitle">{game.name}</div>
+                <img src = {game.pathToBanner} alt = {game.explanation} className = "backImg" />
                 </article>
             )
             })}
             <button className='prev' onClick={this.setCurrentIndex.bind(this,-1)}>
+                <img src="/leftPoint.png" className='prev' alt="left pointer" />
                 </button>
 
                 <button className='next' onClick={this.setCurrentIndex.bind(this,1)}>
+                    <img src="/rightPoint.png" className='next' alt="right pointer" />
                 </button>
-            </div>
             </section>
             </div>
         );
