@@ -1,0 +1,73 @@
+article.activeSlide{
+    opacity: 1;
+    transform: translateX(0);
+}
+article.nextSlide{
+    transform: translateX(100%);
+}
+article.lastSlide{
+    transform: translateX(-100%);
+}
+.section{
+    border: 4px solid;
+margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+article{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+.HomePage{
+      width: 90vw;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+}
+.gameTtitle{
+     text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: var(--clr-grey-3);
+}
+.backImg {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid var(--clr-grey-8);
+  box-shadow: var(--dark-shadow);
+}
+.prev,
+.next {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.prev:hover,
+.next:hover {
+  background: var(--clr-primary-5);
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}

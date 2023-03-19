@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import HomePage from './Home.js';
+import HomePage from './HomePage.js';
 import ChoosePage from './Project.js';
 import TodoApp from './SeaBattlePage.js';
 import { Routes, Route, Link} from 'react-router-dom';

@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from './Image.jsx';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './gamechoose.css';
 import JsonGames from './games.json';
 class ChoosePage extends React.Component {
    // const data = JSON.parse(JsonGames);
+
     render() {
+
         return (
+
             <div className='project'>
             <div className='gameBox'>
             <ul className = "listOfGames">
@@ -16,18 +19,16 @@ class ChoosePage extends React.Component {
             <li className = "listItem">
             
             <Image path = {game.pathToLogo} expl = {game.explanation}/>
-            <div classname = "title">{game.name}</div>
+            <div className = "title">{game.name}</div>
             <div className = "description">{game.description}</div>
-            
-            
-            
             </li>
             </Link>
             )}
 
-            </ul>   
+            </ul>
             </div>
             </div>
+
         );
     }
 }

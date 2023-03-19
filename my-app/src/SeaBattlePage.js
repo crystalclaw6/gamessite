@@ -1,12 +1,7 @@
 import React from 'react';
 import './frame.css'
 //import './2.js';
-import Helmet from "react-helmet";
 class TodoApp extends React.Component {
-
-createMarkup() {
-  return {__html: '<div>hello</div>'};
-}
   render() {
 
     return (
