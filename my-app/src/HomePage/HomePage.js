@@ -2,16 +2,21 @@ import React from 'react';
 import {
     Helmet
 } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import './Home.css';
-import JsonGames from './games.json';
+import JsonGames from '../data/games.json';
 class HomePage extends React.Component {
       constructor(props) {
     super(props);
     this.state = {
-      games: JsonGames,
+      games: JsonGames.slice(0,3),
         currentIndex: 0,
     };
   }
+    componentDidMount(){
+        clearInterval(this.upd);
+        this.upd = setInterval(()=>this.autoSlide(),5000);
+    }
     setCurrentIndex(increment){
         this.setState((prevState) => ({
     currentIndex: prevState.currentIndex + increment,
@@ -29,6 +34,11 @@ class HomePage extends React.Component {
     currentIndex: 0,
 }));
         }
+        }
+    autoSlide(){
+            this.setState((prevState) => ({
+    currentIndex: prevState.currentIndex + 1,
+}));
     }
     render() {
         return (
@@ -46,18 +56,20 @@ class HomePage extends React.Component {
                 position = 'lastSlide';
             }
             return(
+                <Link to={game.path} className = "">
                 <article className = {position}>
                 <div className = "gameTitle">{game.name}</div>
                 <img src = {game.pathToBanner} alt = {game.explanation} className = "backImg" />
                 </article>
+                </Link>
             )
             })}
             <button className='prev' onClick={this.setCurrentIndex.bind(this,-1)}>
-                <img src="/leftPoint.png" className='prev' alt="left pointer" />
+                <img src="/homepage/leftPoint.png" className='prev' alt="left pointer" />
                 </button>
 
                 <button className='next' onClick={this.setCurrentIndex.bind(this,1)}>
-                    <img src="/rightPoint.png" className='next' alt="right pointer" />
+                    <img src="/homepage/rightPoint.png" className='next' alt="right pointer" />
                 </button>
             </section>
             </div>

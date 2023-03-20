@@ -39,13 +39,12 @@
     text-decoration:underline;
     font-family: small-caps;
     font-size: 50px;
-    margin: 5rem;
+    margin: 2rem;
     color: #bef1ff;
 
 }
 
 .linkStyle.small {
-    
     font-size: 30px;
     margin: 25rem;
 }

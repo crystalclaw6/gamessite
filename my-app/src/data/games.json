@@ -3,8 +3,8 @@
     "id": 1,
     "name": "Морской бой",
     "description": "Игра для двух участников, в которой игроки по очереди называют координаты на неизвестной им карте соперника. Если у соперника по этим координатам имеется корабль, то корабль или его часть «топится», а попавший получает право сделать ещё один ход. Цель игрока - первым потопить все корабли противника.",
-    "pathToLogo": "./SBlogo.jpg",
-    "pathToBanner": "./SBbanner.png",
+    "pathToLogo": "./seabattle/image/SBlogo.jpg",
+    "pathToBanner": "./seabattle/image/SBbanner.png",
     "path": "/seabattle",
     "explanation": "Корабль в море"
   },
@@ -12,17 +12,17 @@
     "id": 2,
     "name": "Шашки",
     "description": "Логическая настольная игра для двух игроков, заключающаяся в передвижении определённым образом фишек-шашек по клеткам шашечной доски. Во время партии каждому игроку принадлежат шашки одного цвета: чёрного или белого. Цель игры - взять все шашки соперника или лишить их возможности хода.",
-    "pathToLogo": "./CheckersLogo.png",
-    "pathToBanner": "./checkersbanner.jpg",
-    "path": "",
+    "pathToLogo": "./checkers/CheckersLogo.png",
+    "pathToBanner": "./checkers/checkersbanner.jpg",
+    "path": "/checkers",
     "explanation": "Доска с шашками"
   },
     {
     "id": 3,
-    "name": "Крестики - Нолики",
+    "name": "Крестики - Нолики (В РАЗРАБОТКЕ)",
     "description": "Логическая игра между двумя противниками на квадратном поле 3 на 3 клетки или большего размера. Один из игроков играет «крестиками», второй - «ноликами».",
-    "pathToLogo": "./tttlogo.png",
-    "pathToBanner": "./tttbanner.jpg",
+    "pathToLogo": "./tictactoe/tttlogo.png",
+    "pathToBanner": "./tictactoe/tttbanner.jpg",
     "path": "",
     "explanation": "Поле крестиков - ноликов"
   }

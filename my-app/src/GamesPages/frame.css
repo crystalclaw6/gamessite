@@ -1,0 +1,20 @@
+.frame{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: none;
+    left: 25%;
+    padding:0px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.wrap{
+    width: 1080px;
+    height: 600px;
+}
+#myHtml{
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

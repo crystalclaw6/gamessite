@@ -46,9 +46,13 @@ article{
 
 .gameTitle{
     font-size: 3rem;
-    left: 5%;
+    left: 2%;
 position: absolute;
-    bottom: 20%;
+    bottom: 85%;
+    color: azure;
+    background-color: rgb(66,66,66);
+    opacity:80%;
+    border-radius: 20%;
 }
 .backImg {
     z-index: -1;

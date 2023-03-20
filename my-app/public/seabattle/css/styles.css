@@ -1,6 +1,6 @@
 @font-face {
     font-family: Caviar_Dreams; /* Гарнитура шрифта */
-    src: url(css/Caviar_Dreams.ttf); /* Путь к файлу со шрифтом */
+    src: url(Caviar_Dreams.ttf); /* Путь к файлу со шрифтом */
    }
 .field {
     float: left;
@@ -8,7 +8,7 @@
     width: 440px;
     height: 440px;
     margin: 0 auto;
-    background: url('image/grid.png');
+    background: url('../image/grid.png');
     background-size: cover;
     position: relative;
 
@@ -88,7 +88,7 @@
 .ship {
     width: 40px;
     height: 40px;
-    background: url('image/ships.png');
+    background: url('../image/ships.png');
     position: relative;
 }
 
@@ -124,7 +124,7 @@
 .dot {
     width: 40px;
     height: 40px;
-    background: url('image/ships.png');
+    background: url('../image/ships.png');
     background-position: 0px -160px;
     position: relative;
 }
@@ -132,7 +132,7 @@
 .cross {
     width: 40px;
     height: 40px;
-    background: url('image/ships.png');
+    background: url('../image/ships.png');
     background-position: 0px -80px;
     position: relative;
 }

@@ -4,11 +4,11 @@ class Image extends React.Component {
 
 
     render() {
-        
-        return ( 
+
+        return (
             <>
             <div className="image">
-            <img 
+            <img
             src = {this.props.path} alt = {this.props.expl}/>
             </div>
             </>

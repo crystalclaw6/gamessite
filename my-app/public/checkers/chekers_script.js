@@ -1,6 +1,5 @@
 
-
-const board = [
+var board = [
     null, 0, null, 1, null, 2, null, 3,
     4, null, 5, null, 6, null, 7, null,
     null, 8, null, 9, null, 10, null, 11,
@@ -126,19 +125,19 @@ function isPieceKing() {
 
 // анализируем ячейки куда можем походить
 function getAvailableSpaces() {
-    if (board[selectedPiece.indexOfBoardPiece + 7] === null && 
+    if (board[selectedPiece.indexOfBoardPiece + 7] === null &&
         cells[selectedPiece.indexOfBoardPiece + 7].classList.contains("noPieceHere") !== true) {
         selectedPiece.seventhSpace = true;
     }
-    if (board[selectedPiece.indexOfBoardPiece + 9] === null && 
+    if (board[selectedPiece.indexOfBoardPiece + 9] === null &&
         cells[selectedPiece.indexOfBoardPiece + 9].classList.contains("noPieceHere") !== true) {
         selectedPiece.ninthSpace = true;
     }
-    if (board[selectedPiece.indexOfBoardPiece - 7] === null && 
+    if (board[selectedPiece.indexOfBoardPiece - 7] === null &&
         cells[selectedPiece.indexOfBoardPiece - 7].classList.contains("noPieceHere") !== true) {
         selectedPiece.minusSeventhSpace = true;
     }
-    if (board[selectedPiece.indexOfBoardPiece - 9] === null && 
+    if (board[selectedPiece.indexOfBoardPiece - 9] === null &&
         cells[selectedPiece.indexOfBoardPiece - 9].classList.contains("noPieceHere") !== true) {
         selectedPiece.minusNinthSpace = true;
     }
@@ -148,39 +147,39 @@ function getAvailableSpaces() {
 // проверяем куда можно походить в зависимости белая или черная шашка
 function checkAvailableJumpSpaces() {
     if (turn) {
-        if (board[selectedPiece.indexOfBoardPiece + 14] === null 
+        if (board[selectedPiece.indexOfBoardPiece + 14] === null
         && cells[selectedPiece.indexOfBoardPiece + 14].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece + 7] >= 12) {
             selectedPiece.fourteenthSpace = true;
         }
-        if (board[selectedPiece.indexOfBoardPiece + 18] === null 
+        if (board[selectedPiece.indexOfBoardPiece + 18] === null
         && cells[selectedPiece.indexOfBoardPiece + 18].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece + 9] >= 12) {
             selectedPiece.eighteenthSpace = true;
         }
-        if (board[selectedPiece.indexOfBoardPiece - 14] === null 
+        if (board[selectedPiece.indexOfBoardPiece - 14] === null
         && cells[selectedPiece.indexOfBoardPiece - 14].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece - 7] >= 12) {
             selectedPiece.minusFourteenthSpace = true;
         }
-        if (board[selectedPiece.indexOfBoardPiece - 18] === null 
+        if (board[selectedPiece.indexOfBoardPiece - 18] === null
         && cells[selectedPiece.indexOfBoardPiece - 18].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece - 9] >= 12) {
             selectedPiece.minusEighteenthSpace = true;
         }
     } else {
-        if (board[selectedPiece.indexOfBoardPiece + 14] === null 
+        if (board[selectedPiece.indexOfBoardPiece + 14] === null
         && cells[selectedPiece.indexOfBoardPiece + 14].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece + 7] < 12 && board[selectedPiece.indexOfBoardPiece + 7] !== null) {
             selectedPiece.fourteenthSpace = true;
         }
-        if (board[selectedPiece.indexOfBoardPiece + 18] === null 
+        if (board[selectedPiece.indexOfBoardPiece + 18] === null
         && cells[selectedPiece.indexOfBoardPiece + 18].classList.contains("noPieceHere") !== true
         && board[selectedPiece.indexOfBoardPiece + 9] < 12 && board[selectedPiece.indexOfBoardPiece + 9] !== null) {
             selectedPiece.eighteenthSpace = true;
         }
         if (board[selectedPiece.indexOfBoardPiece - 14] === null && cells[selectedPiece.indexOfBoardPiece - 14].classList.contains("noPieceHere") !== true
-        && board[selectedPiece.indexOfBoardPiece - 7] < 12 
+        && board[selectedPiece.indexOfBoardPiece - 7] < 12
         && board[selectedPiece.indexOfBoardPiece - 7] !== null) {
             selectedPiece.minusFourteenthSpace = true;
         }
@@ -335,7 +334,7 @@ function checkForWin() {
         }
     } else if (whiteScore === 0) {
         divider.style.display = "none";
-        for (let i = 0; i < blackTurntext.length; i++) {            
+        for (let i = 0; i < blackTurntext.length; i++) {
             blackTurntext[i].style.color = "black";
             whiteTurnText[i].style.display = "none";
             blackTurntext[i].textContent = "BLACK WINS!";
